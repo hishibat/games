@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Breaker - リアル系アルカノイド</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hud" aria-label="ゲーム情報">
+        <div class="panel">
+          <h1>NEON BREAKER</h1>
+          <p>リアルな反射とエフェクトのアルカノイド風ブロック崩し</p>
+        </div>
+        <div class="stats panel">
+          <div><span>スコア</span><strong id="score">0</strong></div>
+          <div><span>ライフ</span><strong id="lives">3</strong></div>
+          <div><span>レベル</span><strong id="level">1</strong></div>
+          <div><span>コンボ</span><strong id="combo">x1</strong></div>
+        </div>
+        <div class="controls panel">
+          <h2>操作</h2>
+          <ul>
+            <li><kbd>A</kbd> <kbd>D</kbd> / <kbd>←</kbd> <kbd>→</kbd> で移動</li>
+            <li><kbd>Space</kbd> で開始 / 一時停止</li>
+            <li>マウス移動にも対応</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="game-area">
+        <canvas id="game" width="1000" height="620" aria-label="ゲーム画面"></canvas>
+        <div id="overlay" class="overlay">
+          <h2 id="overlayTitle">SPACEでスタート</h2>
+          <p id="overlaySub">全ブロックを破壊しよう</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
