@@ -83,11 +83,49 @@ span {
   margin-top: 0.2rem;
 }
 
+.power-cell {
+  grid-column: span 2;
+}
+
+.power-cell strong {
+  font-size: 1.05rem;
+}
+
 .controls ul {
   margin: 0.6rem 0 0;
   padding-left: 1.2rem;
   display: grid;
   gap: 0.4rem;
+}
+
+.legend ul.powers {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.legend ul.powers li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.legend .dot {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #0a0e1c;
+  background: var(--c);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--c) 70%, transparent);
 }
 
 kbd {
